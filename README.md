@@ -1,5 +1,5 @@
 # demo
-/**
+
  * getCompareList:(以list中第i个元素对list进行排序赋值). <br/>   
  * TODO(这里描述这个方法的注意事项 – 可选).<br/>  
  *  
@@ -8,7 +8,7 @@
  * @param i
  * @return  
  * @since JDK 1.8
- */
+ 
 private static List<List<String>> getCompareList(List<List<String>> list,int i){
 	Map<String, Double> map = new TreeMap<>();
 	for(List<String> listV : list) {
