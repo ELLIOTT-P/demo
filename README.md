@@ -9,13 +9,13 @@
  * @return  
  * @since JDK 1.8
  
-	private static List<List<String>> getCompareList(List<List<String>> list,int i){
-		Map<String, Double> map = new TreeMap<>();
-		for(List<String> listV : list) {
-			String name = listV.get(0);
-			Double score = Double.parseDouble(listV.get(i));
-			map.put(name, score);
-		}
+private static List<List<String>> getCompareList(List<List<String>> list,int i){
+	Map<String, Double> map = new TreeMap<>();
+	for(List<String> listV : list) {
+		String name = listV.get(0);
+		Double score = Double.parseDouble(listV.get(i));
+		map.put(name, score);
+	}
 
 	List<Entry<String, Double>> entry = new ArrayList<Entry<String, Double>>(map.entrySet());
 	Collections.sort(entry, new Comparator<Entry<String, Double>>() {
